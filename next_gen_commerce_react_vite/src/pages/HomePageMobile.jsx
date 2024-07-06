@@ -1,3 +1,4 @@
+// src/pages/HomePageMobile.jsx
 import React from 'react';
 import ProductCard from '../components/ProductCard';
 import resim1 from '../Resimler/resim1.jpg';
