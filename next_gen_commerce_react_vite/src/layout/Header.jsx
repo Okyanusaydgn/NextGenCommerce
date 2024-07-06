@@ -1,15 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faShoppingCart, faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <nav className="flex items-center justify-between">
-        <ul className="flex space-x-4">
-          <li><Link to="/">Anasayfa</Link></li>
-          <li><Link to="/products">Ürünler</Link></li>
-        </ul>
-      </nav>
+    <header>
+      <div className="w-414 h-532 border-2 border-gray-300 rounded-tl-34 opacity-0">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <div>
+              <span className="mr-2">Bandage</span>
+            </div>
+            <div className="ml-4">
+              <FontAwesomeIcon icon={faSearch} className="text-gray-700" />
+            </div>
+            <div className="ml-4">
+              <FontAwesomeIcon icon={faShoppingCart} className="text-gray-700" />
+            </div>
+            <div className="ml-4">
+              <FontAwesomeIcon icon={faBars} className="text-gray-700" />
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };

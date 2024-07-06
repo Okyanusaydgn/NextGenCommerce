@@ -8,9 +8,9 @@ import HomePageMobile from './pages/HomePageMobile';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div >
       <Header />
-      <div className="flex-grow container mx-auto p-4">
+      <div >
         <Switch>
           <Route path="/products" component={HomePageDesktop} />
           <Route path="/" component={HomePageMobile} />

@@ -12,12 +12,7 @@ const HomePageDesktop = () => {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-4">Ana Sayfa (Desktop View)</h1>
-      <div className="grid grid-cols-3 gap-4">
-        {products.map(product => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
+     
     </div>
   );
 };
