@@ -1,14 +1,15 @@
-import React from "react";
+// src/components/ProductCard.jsx
+import React from 'react';
 
-
-const ProductCard = ({product}) => {
-    return (
-        <div className="border border-gray-300 p-4 rounded-md shadow-md mb-4">
-            <h3 className="text-lg font-semibold">{product.name}</h3>
-            <p className="text-gray-700">{product.description}</p>
-            <span className="text-gray-900 font-bold"> {product.price} TL</span>
-        </div>
-    );
-}
+const ProductCard = ({ product }) => {
+  return (
+    <div className="border p-4">
+      <img src={product.imageUrl} alt={product.name} className="w-full h-32 object-cover mb-2" />
+      <h2 className="text-xl font-bold">{product.name}</h2>
+      <p>{product.description}</p>
+      <p className="text-lg font-semibold">{product.price} TL</p>
+    </div>
+  );
+};
 
 export default ProductCard;
