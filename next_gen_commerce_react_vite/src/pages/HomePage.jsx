@@ -2,6 +2,8 @@ import React from 'react';
 import Clients from '../components/homePageComponents/Clients';
 import TopProductOfTheWeek from '../components/homePageComponents/TopProductOfTheWeek';
 import ProductGallery from '../components/homePageComponents/ProductGallery';
+import FeaturedProducts from '../components/homePageComponents/FeaturedProduct';
+import ServiceHighlights from '../components/homePageComponents/ServiceHighlights';
 
 const HomePage = () => {
   return (
@@ -14,6 +16,12 @@ const HomePage = () => {
       </div>
       <div>
         <ProductGallery />
+      </div>
+      <div>
+        <FeaturedProducts/>
+      </div>
+      <div>
+        <ServiceHighlights/>
       </div>
     </div>
   );
