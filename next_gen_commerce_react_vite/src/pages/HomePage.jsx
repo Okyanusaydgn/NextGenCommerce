@@ -4,6 +4,7 @@ import TopProductOfTheWeek from '../components/homePageComponents/TopProductOfTh
 import ProductGallery from '../components/homePageComponents/ProductGallery';
 import FeaturedProducts from '../components/homePageComponents/FeaturedProduct';
 import ServiceHighlights from '../components/homePageComponents/ServiceHighlights';
+import FeaturedPosts from '../components/homePageComponents/FeaturedPost';
 
 const HomePage = () => {
   return (
@@ -22,6 +23,9 @@ const HomePage = () => {
       </div>
       <div>
         <ServiceHighlights/>
+      </div>
+      <div>
+        <FeaturedPosts/>
       </div>
     </div>
   );
