@@ -10,6 +10,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import HeaderHero from "../assets/header_girl.png";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -40,34 +41,34 @@ const Header = () => {
           <nav className={`md:flex ${isOpen ? "block" : "hidden"}`}>
             <ul className="flex flex-col md:flex-row md:space-x-4 mt-2">
               <li>
-                <a href="#" className="block text-[#737373] text-[14px]">
+                <Link to="/" className="block text-[#737373] text-[14px]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="block text-[#737373] text-[14px]">
+                <Link to="/shop" className="block text-[#737373] text-[14px]">
                   Shop <FontAwesomeIcon icon={faChevronDown} />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="block text-[#737373] text-[14px]">
+                <Link to="#" className="block text-[#737373] text-[14px]">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="block text-[#737373] text-[14px]">
+                <Link to="#" className="block text-[#737373] text-[14px]">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="block text-[#737373] text-[14px]">
+                <Link to="#" className="block text-[#737373] text-[14px]">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="block text-[#737373] text-[14px]">
+                <Link to="#" className="block text-[#737373] text-[14px]">
                   Pages
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -104,7 +105,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex items-center mx-auto justify-center">
-        <img src= {HeaderHero} alt="header_girl" />
+        <img src={HeaderHero} alt="header_girl" />
       </div>
     </div>
   );

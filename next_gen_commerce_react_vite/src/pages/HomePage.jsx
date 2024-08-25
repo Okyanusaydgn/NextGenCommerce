@@ -5,6 +5,7 @@ import ProductGallery from '../components/homePageComponents/ProductGallery';
 import FeaturedProducts from '../components/homePageComponents/FeaturedProduct';
 import ServiceHighlights from '../components/homePageComponents/ServiceHighlights';
 import FeaturedPosts from '../components/homePageComponents/FeaturedPost';
+import ShopHeader from '../components/shopPageComponents/ShopHeader';
 
 const HomePage = () => {
   return (
