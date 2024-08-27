@@ -3,7 +3,7 @@ import React from 'react';
 const ShopProductCard = ({ image, title, price, oldPrice, colors }) => {
   return (
     <div className="overflow-hidden">
-      <div className="w-full h-[450px] overflow-hidden mb-4"> {/* Yükseklik küçültüldü */}
+      <div className="w-full h-[450px] sm:h-[90px] md:h-[450px] overflow-hidden mb-4 "> {/* Yükseklik küçültüldü */}
         <img
           src={image}
           alt={title}

@@ -18,7 +18,8 @@ import shoppage10 from "../../assets/shop_page/shoppage10.png";
 import shoppage11 from "../../assets/shop_page/shoppage11.png";
 import shoppage12 from "../../assets/shop_page/shoppage12.png";
 import ShopProductCard from '../shopPageComponents/ShopProductCard';
-
+import Clients from '../homePageComponents/Clients';
+import Footer from '../../layout/Footer';
 const Shop = () => {
   const items = [
     { id: 1, title: 'CLOTHS', image: shoppage1, itemCount: 5 },
@@ -92,6 +93,10 @@ const Shop = () => {
         <button className="px-3 py-1 border rounded-md">3</button>
         <button className="px-3 py-1 border rounded-md">Next</button>
       </div>
+
+      {/* Clients Section */}
+      <Clients/>
+      <Footer/>
     </div>
   );
 };

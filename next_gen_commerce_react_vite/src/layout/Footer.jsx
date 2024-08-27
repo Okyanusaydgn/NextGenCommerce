@@ -156,8 +156,9 @@ const Footer = () => {
         </div>
 
         {/* Alt kısım */}
-        <div className="mt-8 text-left text-gray-600 bg-[#FAFAFA] py-8 pl-32">
-          Made With Love By Finland All Right Reserved
+        <div className="mt-8 text-gray-600 bg-[#FAFAFA] py-8 pl-4 md:pl-9 text-center md:text-left overflow-auto">
+          <p className="block md:inline whitespace-nowrap  font-bold md:ml-0 md:text-xs md:font-normal">Made With Love By</p>
+          <p className="block md:inline whitespace-nowrap  font-bold md:ml-1 md:text-xs md:font-normal ">Finland All Right Reserved</p>
         </div>
       </div>
     </footer>
