@@ -8,13 +8,13 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="py-8">
-      <div className=" mx-auto ">
+    <footer className="py-8 bg-[#FAFAFA]">
+      <div className="container mx-auto px-4">
         {/* Sosyal medya ikonları ve başlık */}
-        <div className="flex flex-col px-8 py-9 bg-[#FAFAFA]  mb-8 md:flex-row  md:justify-between  md:px-36">
-          <h2 className="text-2xl font-bold mb-4 md:mb-0">Bandage</h2>
+        <div className="flex flex-col px-8 py-9 mb-8 md:flex-row md:justify-between md:px-36">
+          <h2 className="text-2xl font-bold mb-4 md:mb-0 text-center md:text-left">Bandage</h2>
 
-          <div className="flex space-x-4">
+          <div className="flex justify-center space-x-4">
             <a href="#" aria-label="Facebook">
               <FontAwesomeIcon
                 icon={faFacebook}
@@ -40,10 +40,10 @@ const Footer = () => {
         </div>
 
         {/* Bilgi listeleri */}
-        <div className="grid grid-cols-1 gap-8 px-8 md:grid-cols-5 md:text-left md:px-36 ">
-          <div>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-5 md:gap-8 md:text-left">
+          <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-2">Company Info</h3>
-            <ul>
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="text-gray-600">
                   About Us
@@ -66,9 +66,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-2">Legal</h3>
-            <ul>
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="text-gray-600">
                   About Us
@@ -91,9 +91,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-2">Features</h3>
-            <ul>
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="text-gray-600">
                   Business Marketing
@@ -116,9 +116,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-2">Resources</h3>
-            <ul>
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="text-gray-600">
                   IOS & Android
@@ -141,7 +141,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-2">Get In Touch</h3>
             <input
               type="email"
@@ -156,9 +156,9 @@ const Footer = () => {
         </div>
 
         {/* Alt kısım */}
-        <div className="mt-8 text-gray-600 bg-[#FAFAFA] py-8 pl-4 md:pl-9 text-center md:text-left overflow-auto">
-          <p className="block md:inline whitespace-nowrap  font-bold md:ml-0 md:text-xs md:font-normal">Made With Love By</p>
-          <p className="block md:inline whitespace-nowrap  font-bold md:ml-1 md:text-xs md:font-normal ">Finland All Right Reserved</p>
+        <div className="mt-8 text-gray-600 bg-[#FAFAFA] py-8 text-center">
+          <p className="block whitespace-nowrap font-bold text-xs md:text-xs md:font-normal">Made With Love By</p>
+          <p className="block whitespace-nowrap font-bold text-xs md:text-xs md:font-normal">Finland All Rights Reserved</p>
         </div>
       </div>
     </footer>
